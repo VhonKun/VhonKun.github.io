@@ -1,0 +1,76 @@
+<!--Rivera, Vhon Jeric B.-->
+<!--BSIT - A601-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PortfolioStyle.css">
+    <link rel="stylesheet" href="MobileTabletView.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Vhon</h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="videos/Vid2.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+        </div>
+        <div class="contactContainer">
+            <h1>Contact Me!</h1>
+            <form action="https://formsubmit.co/vhonjeric2@gmail.com" method="POST">
+                <input type="text" name="Name" placeholder="Full Name" required>
+                <input type="email" name="Email" placeholder="Email" required>
+                <textarea name="Message" placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <footer id="myfooter">
+            &copy; Copyright 2022
+            <h3>Vhon - Ang Sadboi nang Taguig</h3>
+            <h4>Follow Me @</h4>
+            <ul class="social">
+                <li><a href="https://www.facebook.com/vhonjeric30/"><img src="images/social/facebook-30.png" alt=""></a>
+                </li>
+                <li><a href="https://twitter.com/JericVhon"><img src="images/social/twitter-30.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/vhonjeric_rivera/"><img src="images/social/instagram-30.png"
+                            alt=""></a></li>
+                <li><a href="https://www.youtube.com/channel/UCBjLMGiITeXcfxgbJXjp8nA"><img
+                            src="images/social/youtube-30.png" alt=""></a></li>
+            </ul>
+            <button onclick="toggle(this)" style>Hide Me!</button>
+            <script>
+                let toggle = button => {
+                    let element = document.getElementById("myfooter");
+                    let hidden = element.getAttribute("hidden");
+
+                    if (hidden) {
+                        element.removeAttribute("hidden");
+                        button.innerText = "Hide footer";
+                    } else {
+                        element.setAttribute("hidden", "hidden");
+                        button.innerText = "Show footer";
+                    }
+                }
+            </script>
+        </footer>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="Certificates.html">Certificates</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
